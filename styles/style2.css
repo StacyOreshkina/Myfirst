@@ -43,7 +43,7 @@ padding: 0 0 0 60px;
     width: 300px;
     height: 300px;
     border: 1px dotted rgb(207, 24, 137);
-    background-image: url('pngtree-natural-hills-and-mountains-png-image_781887.jpg');
+    background-image: url(..img/css.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,6 +51,7 @@ padding: 0 0 0 60px;
 
 .nav-link{
     display: block;
+    width: max-content;
  font-size: 2em;
  text-decoration: none;
  color: rgb(206, 89, 153);
@@ -58,7 +59,7 @@ padding: 0 0 0 60px;
  padding: 10px 15px;
  transition: .3s linear all;
 }
-.nav-link:hover{
+.nav-link:hover {
  color: rgb(252, 193, 0); 
  background-color: #ff2515 ;
 }
@@ -92,7 +93,7 @@ height: 150px;
 .hovered div.child{
     display: inline-block;
     width: 93px;
-    height: 96px;
+    height: 93px;
     margin: 2px;
     background-color: rgb(9, 48, 59);
 }
@@ -102,4 +103,71 @@ div.child:first-child{
 }
 div.child:nth-child(5){
     background: rgb(33, 2, 145);
+}
+
+
+
+
+.test{
+    width: 50%;
+    
+    background-color: rgb(233, 156, 210);
+    margin: 0 auto;
+    position: relative;
+}
+
+.test::before{
+    content: "";
+    color: beige;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rosybrown;
+    background-image: url(../img/2.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid rgb(187, 106, 106);
+    position: absolute;
+    left: -80px;
+    top:calc(50% - 15px);
+    transition: 1.5s linear all;
+}
+
+.test::after{
+    content: "";
+    color: beige;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rosybrown;
+    background-image: url(../img/2.png);
+    background-position: center ;
+    transform: rotate(180deg);
+    background-size: contain;
+    border: 1px solid rgb(214, 95, 95);
+    position: absolute;
+    right: -80px;
+    top: calc(50% - 15px);
+    transition: 1.5s linear all;
+}
+.test::hover::after{
+    transform: rotate(360deg);
+
+}
+.test:hover::before{
+    transform: rotate(180deg);
+}
+
+.test:first-letter{
+    font-size: 2em;
+    font-weight: 600;
+    margin-right: 3px;
+}
+.test::first-line{
+    background-color: rgb(119, 197, 233);
+}
+
+.test::selection{
+   background-color: rgb(83, 29, 81);
 }

@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'Architects';
+    src: url(../fonts/Architects/ArchitectsDaughter-Regular.ttf) format('truetype');
+    src: url(../fonts/Architects/ArchitectsDaughter-Regular.woff) format('woff');
+    src: url(../fonts/Architects/ArchitectsDaughter-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Indie';
+    src: url(../fonts/Indie/IndieFlower-Regular.ttf) format('truetype');
+    src: url(../fonts/Indie/IndieFlower-Regular.woff) format('woff');
+    src: url(../fonts/Indie/IndieFlower-Regular.woff2) format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Satisfy';
+    src: url(../fonts/Satisfy/Satisfy-Regular.ttf) format('truetype');
+    src: url(../fonts/Satisfy/satisfy-regular-webfont.woff) format('woff');
+    src: url(../fonts/Satisfy/satisfy-regular-webfont.woff2) format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}

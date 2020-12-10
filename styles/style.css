@@ -335,19 +335,26 @@ margin: 0;
     background-image: url(../images/line.png);
 }
 
-
-
-
-.twitter-text{
-    font-size: 15px;
-    font-family:'Satisfy';
+.twitter-box li p{
     text-indent: 20px;
+    position: relative;
+    margin: 0;
+    font-family: 'Satisfy';
+    font-size: 15px;
 }
 
-.twitter-text::before{
-  
-    background-image: url(../images/icon-twitter.png) ;
-  }
+.twitter-box li p:before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../images/img-icon-twitter.png);
+    background-repeat: no-repeat;
+    left: 1px;
+}
+
+
+
 
 .twitter-link{
     text-decoration: none;
